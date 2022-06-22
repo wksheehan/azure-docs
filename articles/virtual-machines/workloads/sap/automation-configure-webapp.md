@@ -111,10 +111,12 @@ In the case of deploying using the Azure CLI, you can download the parameter fil
 5. The landscape or system object will appear in its respective tab
 
 ### Deploying a landscape or system object (Azure Devops deployment)
-1. Next to the landscape or system you would like to deploy, click "Deploy"
-2. Specify the necessary parameters, and confirm it is the correct object
-3. Click deploy
-4. The web app will automatically generate a .tfvars file from the object, update your Devops repository, and kick of the workload zone or system (infrastructure) pipeline. Monitor the deployment back in Azure Devops
+1. Navigate to the Landscape or System tab
+2. Next to the landscape or system you would like to deploy, click "Deploy"
+   * If you would like to deploy a file, first convert it to a landscape or system object
+4. Specify the necessary parameters, and confirm it is the correct object
+5. Click deploy
+6. The web app will automatically generate a .tfvars file from the object, update your Devops repository, and kick of the workload zone or system (infrastructure) pipeline. Monitor the deployment back in Azure Devops
 
 
 
