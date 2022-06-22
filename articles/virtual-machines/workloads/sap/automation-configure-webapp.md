@@ -74,7 +74,7 @@ For full instructions on setting up the web app using Azure Devops, see [Use SAP
 For full instructions on setting up the web app using the Azure CLI, see [Deploy the control plane](https://review.docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/automation-deploy-control-plane?branch=main&tabs=linux)
 
 ### Summary of additional steps required to set up the web app before deploying the control plane:
-1. Export the environment variables TF_VAR_app_registration_app_id, TF_VAR_webapp_client_secret, and TF_VAR_use_webapp="true"
+1. Export the environment variables TF_VAR_app_registration_app_id, TF_VAR_webapp_client_secret, and TF_VAR_use_webapp="true".
 
 ### Summary of steps required to access the web app after deploying the control plane:
 1. Update the app registration reply URLs.
@@ -101,22 +101,22 @@ In the case of deploying using the Azure CLI, you can download the parameter fil
 5. Click submit in the bottom left hand corner
 
 ### Creating a landscape or system object from a file
-1. Navigate to the "File" tab at the top of the website
+1. Navigate to the "File" tab at the top of the website.
 2. Your options are
-   * Create a new file from scratch there in browser. It should be in the .tfvars file format. Click save
-   * Import an existing .tfvars file, and (optionally) edit it before saving
-   * Use an existing template, and (optionally) edit it before saving
-3. Make sure your file conforms to the correct naming conventions
-4. Next to the file you would like to convert to a landscape or system object, click "Convert"
-5. The landscape or system object will appear in its respective tab
+   * Create a new file from scratch there in browser. It should be in the .tfvars file format. Click save.
+   * Import an existing .tfvars file, and (optionally) edit it before saving.
+   * Use an existing template, and (optionally) edit it before saving.
+3. Make sure your file conforms to the correct naming conventions.
+4. Next to the file you would like to convert to a landscape or system object, click "Convert".
+5. The landscape or system object will appear in its respective tab.
 
 ### Deploying a landscape or system object (Azure Devops deployment)
-1. Navigate to the Landscape or System tab
-2. Next to the landscape or system you would like to deploy, click "Deploy"
-   * If you would like to deploy a file, first convert it to a landscape or system object
-4. Specify the necessary parameters, and confirm it is the correct object
-5. Click deploy
-6. The web app will automatically generate a .tfvars file from the object, update your Devops repository, and kick of the workload zone or system (infrastructure) pipeline. Monitor the deployment back in Azure Devops
+1. Navigate to the Landscape or System tab.
+2. Next to the landscape or system you would like to deploy, click "Deploy".
+   * If you would like to deploy a file, first convert it to a landscape or system object.
+4. Specify the necessary parameters, and confirm it is the correct object.
+5. Click deploy.
+6. The web app will automatically generate a .tfvars file from the object, update your Devops repository, and kick off the workload zone or system (infrastructure) pipeline. Monitor the deployment back in Azure Devops.
 
 
 
